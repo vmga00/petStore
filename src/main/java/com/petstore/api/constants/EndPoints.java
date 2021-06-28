@@ -10,4 +10,9 @@ public class EndPoints {
     public static final String SET_ORDER = "/store/order";
     public static final String DELETE_ORDER = "/store/order/";
 
+    public static final String CREATE_PET = "/pet";
+    public static final String GET_PET_BY_ID = "/pet/";
+    public static final String DELETE_PET= "/pet/";
+    public static final String UPDATE_PET= "/pet";
+
 }
