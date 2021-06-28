@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Test-Pet_Store_API" >
+    <test name="Standalone Suite" >
+        <classes>
+            <class name="com.petstore.api.tests.Test_User" />
+            <class name="com.petstore.api.tests.Test_Store" />
+            <class name="com.petstore.api.tests.Test_Pet" />
+        </classes>
+    </test>
+</suite>
