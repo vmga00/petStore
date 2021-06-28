@@ -2,9 +2,10 @@ package com.petstore.api.helpers;
 
 import com.petstore.api.constants.EndPoints;
 import com.petstore.api.models.User;
+import com.petstore.api.utils.RequestHelper;
 import io.restassured.response.Response;
 
-public class UserServiceHelpers extends com.petstore.api.utils.Utils {
+public class UserServiceHelpers extends RequestHelper {
 
     public UserServiceHelpers() {
         initialize();

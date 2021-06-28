@@ -4,13 +4,14 @@ import com.petstore.api.constants.EndPoints;
 import com.petstore.api.models.Category;
 import com.petstore.api.models.Pet;
 import com.petstore.api.models.Tag;
+import com.petstore.api.utils.RequestHelper;
 import io.restassured.response.Response;
 import net.minidev.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class PetServiceHelpers extends com.petstore.api.utils.Utils {
+public class PetServiceHelpers extends RequestHelper {
     public PetServiceHelpers() {
         initialize();
     }

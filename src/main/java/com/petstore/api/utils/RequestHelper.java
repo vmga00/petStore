@@ -5,14 +5,14 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class Utils {
+public class RequestHelper {
     private static final String BASE_URL = ConfigManager.getInstance().getString("baseUrl");
     private static final String PORT = ConfigManager.getInstance().getString("port");
     private static final String API_VERSION =  ConfigManager.getInstance().getString("apiVersion");
     private static final String APP_CONTEXT =  ConfigManager.getInstance().getString("appContext");
     protected static String context = APP_CONTEXT + "/" + API_VERSION;
 
-    public static Utils util;
+    public static RequestHelper util;
 
     public  static void initialize(){
         RestAssured.baseURI = BASE_URL;
