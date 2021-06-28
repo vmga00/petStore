@@ -1,0 +1,48 @@
+Exploration time: 60 min
+1. Testing Monefy ios app
+2. Explore the app home screen to discover at least 3 sections:
+	- header: filter, search, transactions and other options
+	- main: current date, multiple categories icons, inconme/expenses balances
+	- balance: balance list, add expenses/income buttons
+3. Explore the main section icons to discover they are buttons
+	- Explore the house icon, by taping on it, to discover the expense input window
+	- Explore adding an expense, by taping on an icon and adding an amount, to discover a pie-style chart
+4. Explore the balance label, by taping on it to discover the list of income and expenses input
+	- Exploring the +/- button, by taping on it, to discover the amount input section
+5. Explore the header section other options, by taping on it, to discover the categories, accounts, currencies and settings
+6. Explore the filters icon, by taping on it, to discover accounts and date filters
+7. Explore the search, by tapin on the magnifier glass icon, to discover the search
+8. Explore the opposite arrows icon by taping on it to discover the new transfer screen
+
+Home Screen Findings
+ - Displaying categories icons makes the app atractive at first glance but is a bit confusing what they mean and their purpouse until one of them is pressed
+ - Displaying the current date is really helpful, however i would had expected that taping on it allowed me to show a calendar and select the date I would like to navigate to
+ - Displaying the income and expenses at the centers are quite useful but it would be more useful to also show the remaining balance
+ - displaying the expenses within a circular chart helps visualize the expenses, I would had expected to be able to modify the expense/income by pressing the labels
+ - The icons for adding income expense can be confuising, the plus (+) button in green can be understood as to add an operation not necesarly as an income, in similar fashion the minus (-) button in red, can be understood as to remove an opperation not necesarly as an expense.
+
+Balance screen Findings
+ - Showing the icons and the categories is helpful
+ - It would be expected to be able to tap and drag an expense to the left to display a trash icon to remove the expense/income instead of having to tap move into the edit expense/income screen
+
+Income/Expense input findings,
+ - At first glance is strange to see a full calculator when trying to input the amount, I would consider this as a bug
+ - Is not possible to switch the account after opening the recurring screen
+
+Bug
+- Exporting data to a file within the same device is not possible as there is no way to complete the action
+- Restoring the financial data through the backup file is confiusing, after pressing the restore data option, a list seems to popup floating without any context,
+- Clearing the data also removes the selected currency
+- pressing and holding a category icon displays the amount spend within the circular chart however releasing the press always takes you to the input expense screen, is not clear how long do i need to keep the hold to prevent this from happening
+
+
+
+Prioritisation
+As the app aim is to help users to track their spendings, the screens with the highest impact would be the home screen, the balance and income/expense input screens as this are the key items in a tracker, after this the features helping reporting would be the second most important example of this are the filters and search options. Finally customization would be the next area I would focus on, during the exploration, it seems that is not possible to delete categories and creating new ones is only possible for premium users.
+
+Risks
+the main risks for this application would be security and consistency.
+
+Security, as the app is for tracking financial information, this is considered sensible data and therefore some security layer should be added (seems to be present within the payed version - not verified) while trying to open the app or export the information through a csv file.
+
+Consistency, the app seems to be aiming at handling multiple currencies and accounts which means that we must ensure to track both items correctly.
