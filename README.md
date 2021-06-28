@@ -1,5 +1,7 @@
 # PetStore API Test Automation Framework
+
 ##Overview
+
 This is a test automation framework for testing the pet store sample project hotsed at https://petstore3.swagger.io. For other versions, check the branches.
 
 This is a java project to run this framework, please set the API standalone project as described in [Pet Store API](https://github.com/swagger-api/swagger-petstore)
