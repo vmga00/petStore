@@ -35,7 +35,35 @@ public class Test_Pet {
     }
 
     @Test
-    public void testUpdate(){
+    public void test_CREATE_PET(){
+        Response result = petServiceHelpers.setPet(pet);
+        result.prettyPeek();
+    }
+
+    @Test
+    public void test_GET_PET_BY_ID(){
+        Response result = petServiceHelpers.getPetById(pet.getId().toString());
+        result.prettyPeek();
+    }
+
+    @Test
+    public void test_DELETE_PET(){
+        Response result = petServiceHelpers.getPetById(pet.getId().toString());
+        if(result.getStatusCode()==200){
+            result.prettyPeek();
+            result = petServiceHelpers.deletePet(pet.getId().toString());
+            result.prettyPeek();
+        }else{
+            System.out.println("\n\nId was not found, creating a pet and deleting it...\n\n");
+            result = petServiceHelpers.setPet(pet);
+            result.prettyPeek();
+            result = petServiceHelpers.deletePet(pet.getId().toString());
+            result.prettyPeek();
+        }
+    }
+
+    @Test
+    public void test_UPDATE_PET(){
         Response result= petServiceHelpers.getPetById(pet.getId().toString());
         if(result.getStatusCode()==200){
             result.prettyPeek();
@@ -46,6 +74,4 @@ public class Test_Pet {
             result.prettyPeek();
         }else{}
     }
-
-
 }
