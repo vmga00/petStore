@@ -1,0 +1,19 @@
+As we are testing an API, based on functionality I would recommend to automate the test of it in the following way.
+
+1. User
+    a) [POST]    Create user            [/user]
+    b) [GET]     Get user by user_name  [/user/{username}]
+    c) [GET]     User login             [/user/login]
+    d) [GET]     User logout            [/user/logout]
+    e) [DELETE]  User delete            [/user/{username}]
+    f) [PUT]     User update            [/user/{username}] -> not automated as endpoint is currently buggy and perform the same action as DELETE
+
+2. Store
+    a) [POST]    Place Order            [/store/order]
+    b) [GET]     Get order by id        [/store/order/{orderId}]
+    c) [DELETE]  Delete order           [/store/order/{orderId}]
+
+3. Pet
+    a) [POST]    Create pet             [/pet]
+    b) [GET]     Get pet by id          [/pet/{petId}]
+    c) [DELETE]  Delete Pet             [/pet/{petId}]
